@@ -12,15 +12,11 @@ Important points:
  * The steps below are not necessary if default Appium capabilities are used.
  The server will do everything for you, however you won't have so much control over WDA.
  * It is mandatory to have SSH or physical access to the machine to which the device under test
- is connected.
-
-
-### WDA Setup
+ is connect
 
 WebDriverAgent source is automatically downloaded with Appium. The usual folder location
-in case Appium is installed via npm tool (`npm install -g appium`) is
-`/usr/local/lib/node_modules/appium/node_modules/appium-webdriveragent`
-If this was a fresh install then it is also necessary to download third-party dependencies
+ind via npm tool (`npm install -g appium`) is
+`/usr/local/lib/node_modules/appium/node_modules/appium-webdl then it is also necessary to download third-party dependencies
 (_carthage_ tool is mandatory for this purpose: `brew install carthage`):
 
 ```bash
@@ -31,14 +27,8 @@ cd /usr/local/lib/node_modules/appium/node_modules/appium-webdriveragent
 Also, it might be necessary to create an empty folder for WDA resources:
 
 ```bash
-mkdir -p /usr/local/lib/node_modules/appium/node_modules/appium-webdriveragent/Resources/WebDriverAgent.bundle
-```
-
-No further configuration steps are needed if you're going to execute your automated tests on
-iOS Simulator.
-
-Real device, however, requires some more work to be done. Follow
-[real device configuration documentation](https://github.com/appium/appium-xcuitest-driver/blob/master/docs/real-device-config.md)
+mkdir -p /usr/local/lib/node_modules/appium/node_modules/appium-webdriveragent/Resources/WebDriverAg
+No furlation](https://github.com/appium/appium-xcuitest-driver/blob/master/docs/real-device-config.md)
 to setup code signing.
 
 In order to make sure that WDA source is configured properly:
